@@ -1,0 +1,29 @@
+.driver {
+    height: 400px;
+    background-image: url(../img/driver-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .h1-background {
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: $h1FontSize;
+            color: $h1FontColor;
+            text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000,
+                -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+            text-transform: uppercase;
+            font-weight: 700;
+            @include fluid-type-static(70px, $h1FontSize)
+        }
+    }
+
+
+}

@@ -1,0 +1,57 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $menuBackgroundColor;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+
+        a {
+
+            img {
+                height: 85px;
+                width: 85px;
+                margin: 0 0 0 30px;
+            }
+        }
+
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+
+        nav {
+
+
+
+            ul {
+                @include reset-list;
+                display: flex;
+
+
+                li {
+                    margin-right: 60px;
+
+                    &:last-child {
+                        margin-right: 200px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $navFontColor;
+                        padding: 16px 0;
+                        font-weight: 700;
+                        font-size: $navFontSize;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
