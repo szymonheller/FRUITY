@@ -7,17 +7,44 @@
             display: flex;
             flex-wrap: wrap;
 
+
             .fruit-photos {
                 width: calc(100%/3);
+
+
 
                 .photo {
                     height: 280px;
                     width: 320px;
+                    position: relative;
+
+                    &:hover {
+
+                        p {
+                            display: block;
+                        }
+
+                        img {
+                            filter: blur(5px);
+                        }
+                    }
+
+                    p {
+                        position: absolute;
+                        top: 35%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 26px;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        display: none;
+                    }
 
                     img {
+
                         height: 100%;
                         width: 100%;
-
                     }
                 }
 
@@ -33,6 +60,7 @@
 
 
                     p {
+                        color: $informationFontColor;
                         margin: 0;
                     }
                 }

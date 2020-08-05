@@ -392,6 +392,29 @@ body {
 .fruits .container .fruits-about .fruit-photos .photo {
   height: 280px;
   width: 320px;
+  position: relative;
+}
+
+.fruits .container .fruits-about .fruit-photos .photo:hover p {
+  display: block;
+}
+
+.fruits .container .fruits-about .fruit-photos .photo:hover img {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.fruits .container .fruits-about .fruit-photos .photo p {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: none;
 }
 
 .fruits .container .fruits-about .fruit-photos .photo img {
@@ -411,5 +434,6 @@ body {
 }
 
 .fruits .container .fruits-about .fruit-photos .information p {
+  color: #000000;
   margin: 0;
 }
