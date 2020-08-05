@@ -1,5 +1,5 @@
 .driver {
-    height: 400px;
+    height: 360px;
     background-image: url(../img/driver-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             position: absolute;
-            top: 38%;
+            top: 45%;
             left: 50%;
             transform: translateX(-50%);
             font-size: $h1FontSize;

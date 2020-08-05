@@ -7,9 +7,22 @@ body {
     overflow-x: hidden;
 }
 
+// Default container
 .container {
     width: 100%;
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+// Section-name
+.section-name {
+
+    h2 {
+        margin: 0;
+        font-weight: 700;
+        padding: 32px 0;
+        font-size: $sectionNameFontSize;
+        color: $sectionNameFontColor;
+    }
 }

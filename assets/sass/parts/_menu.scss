@@ -13,8 +13,8 @@
         a {
 
             img {
-                height: 85px;
-                width: 85px;
+                height: 75px;
+                width: 75px;
                 margin: 0 0 0 30px;
             }
         }
@@ -44,10 +44,14 @@
                     a {
                         text-decoration: none;
                         color: $navFontColor;
-                        padding: 16px 0;
+                        padding: 12px 0;
                         font-weight: 700;
                         font-size: $navFontSize;
+                        transition: .2s;
 
+                        &:hover {
+                            color: $navHoverFontColor;
+                        }
                     }
                 }
             }

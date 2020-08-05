@@ -1,0 +1,43 @@
+.fruits {
+    background-color: $sectionFruitsBackgroundColor;
+
+    .container {
+
+        .fruits-about {
+            display: flex;
+            flex-wrap: wrap;
+
+            .fruit-photos {
+                width: calc(100%/3);
+
+                .photo {
+                    height: 280px;
+                    width: 320px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+
+                    }
+                }
+
+                .information {
+                    background-color: $informationBackgroundColor;
+                    width: 320px;
+                    height: 185px;
+                    padding: 18px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    letter-spacing: 1px;
+                    max-width: 320px;
+
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
