@@ -6,6 +6,10 @@
     background-size: cover;
     position: relative;
 
+    @media (max-width:970px) {
+        height: 260px;
+    }
+
     .h1-background {
 
         h1 {
@@ -21,7 +25,10 @@
                 -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
             text-transform: uppercase;
             font-weight: 700;
-            @include fluid-type-static(70px, $h1FontSize)
+
+            @include fluid-type-static(70px, $h1FontSize) @media (max-width:970px) {
+                top: 30%;
+            }
         }
     }
 
