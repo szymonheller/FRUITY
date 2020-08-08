@@ -782,63 +782,58 @@ body .hvr-wobble-to-bottom-right:active {
   border-radius: 15px;
 }
 
-.about-fruits .container .box h2 {
+.about-fruits .container .box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-fruits .container .box .title h2 {
   text-align: center;
   margin: 0;
   font-weight: 700;
   font-size: 52px;
 }
 
-.about-fruits .container .box h2 i {
+.about-fruits .container .box .title h2 i {
   color: #e5ff00;
   text-shadow: #aaa5a5 0px 0px 10px;
 }
 
 @media (max-width: 600px) {
-  .about-fruits .container .box h2 i {
+  .about-fruits .container .box .title h2 i {
     font-size: 35px;
   }
 }
 
-.about-fruits .container .box h2 span:first-of-type {
+.about-fruits .container .box .title h2 span:first-of-type {
   color: #1bec09;
 }
 
-.about-fruits .container .box h2 span:nth-of-type(2) {
+.about-fruits .container .box .title h2 span:nth-of-type(2) {
   color: #808b14b0;
 }
 
-.about-fruits .container .box h2 span:nth-of-type(3) {
+.about-fruits .container .box .title h2 span:nth-of-type(3) {
   color: #067e34;
 }
 
-.about-fruits .container .box h2 span:nth-of-type(4) {
+.about-fruits .container .box .title h2 span:nth-of-type(4) {
   color: #f51a50;
 }
 
-.about-fruits .container .box h2 span:nth-of-type(5) {
+.about-fruits .container .box .title h2 span:nth-of-type(5) {
   color: #e0d4d4;
+  padding-right: 18px;
 }
 
-.about-fruits .container .box h2 span:nth-of-type(6) {
-  margin-left: 20px;
-  color: #9893e0;
-}
-
-.about-fruits .container .box h2 span:nth-of-type(7) {
-  color: #b553db;
-}
-
-.about-fruits .container .box h2 span:nth-of-type(8) {
-  color: #cdd646;
-}
-
-.about-fruits .container .box h2 span:nth-of-type(9) {
-  color: #f35252;
-}
-
-.about-fruits .container .box h2 span:nth-of-type(10) {
-  color: #46a02b;
+.about-fruits .container .box .title h2 #last {
+  padding: 0;
 }
 
 .about-fruits .container .box p {

@@ -31,66 +31,54 @@
             background-color: $sectionFruitsBackgroundColor;
             border-radius: 15px;
 
-            h2 {
-                text-align: center;
-                margin: 0;
-                font-weight: 700;
-                font-size: 52px;
+            .title {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 
-                // @media (max-width:563px) {
-                //     font-size: 40px;
-                // }
+                h2 {
+                    text-align: center;
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: 52px;
 
-                i {
-                    color: #e5ff00;
-                    text-shadow: #aaa5a5 0px 0px 10px;
 
-                    @media (max-width:600px) {
-                        font-size: 35px;
-                    }
-                }
+                    i {
+                        color: #e5ff00;
+                        text-shadow: #aaa5a5 0px 0px 10px;
 
-                span {
-
-                    &:first-of-type {
-                        color: #1bec09;
+                        @media (max-width:600px) {
+                            font-size: 35px;
+                        }
                     }
 
-                    &:nth-of-type(2) {
-                        color: #808b14b0;
+                    span {
+
+                        &:first-of-type {
+                            color: #1bec09;
+                        }
+
+                        &:nth-of-type(2) {
+                            color: #808b14b0;
+                        }
+
+                        &:nth-of-type(3) {
+                            color: #067e34;
+                        }
+
+                        &:nth-of-type(4) {
+                            color: #f51a50;
+                        }
+
+                        &:nth-of-type(5) {
+                            color: #e0d4d4;
+                            padding-right: 18px;
+                        }
+
                     }
 
-                    &:nth-of-type(3) {
-                        color: #067e34;
-                    }
-
-                    &:nth-of-type(4) {
-                        color: #f51a50;
-                    }
-
-                    &:nth-of-type(5) {
-                        color: #e0d4d4;
-                    }
-
-                    &:nth-of-type(6) {
-                        margin-left: 20px;
-                        color: #9893e0;
-                    }
-
-                    &:nth-of-type(7) {
-                        color: #b553db;
-                    }
-
-                    &:nth-of-type(8) {
-                        color: #cdd646;
-                    }
-
-                    &:nth-of-type(9) {
-                        color: #f35252;
-                    }
-
-                    &:nth-of-type(10) {
-                        color: #46a02b;
+                    #last {
+                        padding: 0;
                     }
 
                 }
