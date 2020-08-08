@@ -834,6 +834,7 @@ body .hvr-wobble-to-bottom-right:active {
   text-align: center;
   letter-spacing: 1px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .about-fruits .container .box p:last-of-type {
@@ -842,6 +843,7 @@ body .hvr-wobble-to-bottom-right:active {
 
 .vegetables {
   background-color: #e6f8a4;
+  padding-bottom: 60px;
 }
 
 .vegetables .container .box {
@@ -858,7 +860,7 @@ body .hvr-wobble-to-bottom-right:active {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  margin: 0 88px;
+  margin: 0 88px 60px 88px;
 }
 
 .vegetables .container .box img {
@@ -866,4 +868,109 @@ body .hvr-wobble-to-bottom-right:active {
   padding: 12px;
   width: 320px;
   height: 280px;
+}
+
+.vegetables .container .about-vegetables {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+@media (max-width: 1111px) {
+  .vegetables .container .about-vegetables {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.vegetables .container .about-vegetables .about-left {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1111px) {
+  .vegetables .container .about-vegetables .about-left {
+    margin-bottom: 10px;
+  }
+}
+
+.vegetables .container .about-vegetables .about-left p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+@media (max-width: 1111px) {
+  .vegetables .container .about-vegetables .about-left p {
+    text-align: center;
+  }
+}
+
+.vegetables .container .about-vegetables .about-left p span {
+  font-size: 18px;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+.vegetables .container .about-vegetables .about-left p .fruit {
+  color: #ec3f20;
+}
+
+.vegetables .container .about-vegetables .about-left p .vege {
+  color: #239c05;
+}
+
+.vegetables .container .about-vegetables .about-right {
+  width: 50%;
+  padding: 0 15px;
+}
+
+@media (max-width: 550px) {
+  .vegetables .container .about-vegetables .about-right {
+    text-align: center;
+  }
+}
+
+.vegetables .container .about-vegetables .about-right .statisctic .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+@media (max-width: 550px) {
+  .vegetables .container .about-vegetables .about-right .statisctic .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.vegetables .container .about-vegetables .about-right .statisctic .bar {
+  height: 6px;
+  background-color: #b1b1b1;
+}
+
+.vegetables .container .about-vegetables .about-right .statisctic .bar span {
+  height: 6px;
+  background-color: #e60303;
+  display: block;
 }
