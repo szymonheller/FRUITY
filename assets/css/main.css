@@ -612,9 +612,9 @@ body .hvr-wobble-to-bottom-right:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fruits .container .fruits-about .fruit-photos {
@@ -625,7 +625,6 @@ body .hvr-wobble-to-bottom-right:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(100%/3);
 }
 
 @media (max-width: 725px) {
