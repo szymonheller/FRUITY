@@ -9,9 +9,12 @@
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
-            background-color: white;
+            background-color: $informationBackgroundColor;
             margin: 0 88px 60px 88px;
 
+            @media (max-width:560px) {
+                background-color: $sectionVegetablesBackgroundColor;
+            }
 
             img {
                 margin: 0;

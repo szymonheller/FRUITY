@@ -617,6 +617,14 @@ body .hvr-wobble-to-bottom-right:active {
           justify-content: space-between;
 }
 
+@media (max-width: 1100px) {
+  .fruits .container .fruits-about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .fruits .container .fruits-about .fruit-photos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,20 +648,6 @@ body .hvr-wobble-to-bottom-right:active {
   height: 280px;
   width: 320px;
   position: relative;
-}
-
-@media (max-width: 1100px) {
-  .fruits .container .fruits-about .fruit-photos .photo {
-    height: 186.6px;
-    width: 213.3px;
-  }
-}
-
-@media (max-width: 725px) {
-  .fruits .container .fruits-about .fruit-photos .photo {
-    height: 280px;
-    width: 320px;
-  }
 }
 
 .fruits .container .fruits-about .fruit-photos .photo:hover p {
@@ -687,18 +681,6 @@ body .hvr-wobble-to-bottom-right:active {
   background-color: #ffffff;
   width: 320px;
   padding: 18px;
-}
-
-@media (max-width: 1100px) {
-  .fruits .container .fruits-about .fruit-photos .information {
-    width: 213.3px;
-  }
-}
-
-@media (max-width: 725px) {
-  .fruits .container .fruits-about .fruit-photos .information {
-    width: 320px;
-  }
 }
 
 .fruits .container .fruits-about .fruit-photos .information p {
@@ -764,6 +746,31 @@ body .hvr-wobble-to-bottom-right:active {
 .about-fruits {
   height: 320px;
   margin-top: 170px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 594px) {
+  .about-fruits {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 355px) {
+  .about-fruits {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 330px) {
+  .about-fruits {
+    margin-bottom: 280px;
+  }
+}
+
+@media (max-width: 318px) {
+  .about-fruits {
+    margin-bottom: 340px;
+  }
 }
 
 .about-fruits .container .box {
@@ -785,6 +792,12 @@ body .hvr-wobble-to-bottom-right:active {
 .about-fruits .container .box h2 i {
   color: #e5ff00;
   text-shadow: #aaa5a5 0px 0px 10px;
+}
+
+@media (max-width: 600px) {
+  .about-fruits .container .box h2 i {
+    font-size: 35px;
+  }
 }
 
 .about-fruits .container .box h2 span:first-of-type {
@@ -837,8 +850,10 @@ body .hvr-wobble-to-bottom-right:active {
   font-size: 18px;
 }
 
-.about-fruits .container .box p:last-of-type {
-  padding-bottom: 0;
+@media (max-width: 340px) {
+  .about-fruits .container .box p {
+    font-style: 12px;
+  }
 }
 
 .vegetables {
@@ -859,8 +874,14 @@ body .hvr-wobble-to-bottom-right:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0 88px 60px 88px;
+}
+
+@media (max-width: 560px) {
+  .vegetables .container .box {
+    background-color: #e6f8a4;
+  }
 }
 
 .vegetables .container .box img {
