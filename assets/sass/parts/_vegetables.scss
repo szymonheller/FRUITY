@@ -1,6 +1,5 @@
 .vegetables {
     background-color: $sectionVegetablesBackgroundColor;
-    padding-bottom: 60px;
 
     .container {
 
@@ -31,7 +30,7 @@
             justify-content: space-between;
             border-radius: 15px;
             padding: 25px;
-            margin-bottom: 80px;
+            margin: 0 -15px 80px -15px;
 
 
             @media (max-width:1111px) {

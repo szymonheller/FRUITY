@@ -877,7 +877,6 @@ body .hvr-grow:active {
 
 .vegetables {
   background-color: #e6f8a4;
-  padding-bottom: 60px;
 }
 
 .vegetables .container .box {
@@ -922,7 +921,7 @@ body .hvr-grow:active {
           justify-content: space-between;
   border-radius: 15px;
   padding: 25px;
-  margin-bottom: 80px;
+  margin: 0 -15px 80px -15px;
 }
 
 @media (max-width: 1111px) {
@@ -1080,4 +1079,108 @@ body .hvr-grow:active {
 
 .vegetables .container .big-box .small-box .third {
   background-color: #7e6555;
+}
+
+.salads {
+  background-color: #e6f8a4;
+}
+
+.salads .container .box-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.salads .container .box-around .box-left {
+  width: 50%;
+}
+
+@media (max-width: 850px) {
+  .salads .container .box-around .box-left {
+    width: 100%;
+  }
+}
+
+.salads .container .box-around .box-left .box-bg {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px 0 90px 0;
+  margin: 0 -15px;
+}
+
+@media (max-width: 342px) {
+  .salads .container .box-around .box-left .box-bg {
+    background-color: #e6f8a4;
+  }
+}
+
+.salads .container .box-around .box-left .box-bg h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  padding: 70px 0 15px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: .8px;
+}
+
+.salads .container .box-around .box-left .box-bg img {
+  width: 300px;
+  height: 300px;
+  margin: 60px 0 0 0;
+}
+
+.salads .container .box-around .box-left .box-bg p {
+  margin: 0;
+  font-style: italic;
+}
+
+.salads .container .box-around .box-right {
+  width: 50%;
+}
+
+@media (max-width: 850px) {
+  .salads .container .box-around .box-right {
+    width: 100%;
+  }
+}
+
+.salads .container .box-around .box-right .box-bg {
+  text-align: center;
+  margin: 0 -15px;
+}
+
+.salads .container .box-around .box-right .box-bg img {
+  width: 300px;
+  height: 300px;
+  margin: 20px 0;
+  border-radius: 50%;
+}
+
+.salads .container .box-around .box-right .box-bg p {
+  margin: 0;
+  padding: 0 100px;
+  font-size: 18px;
+  letter-spacing: .8px;
+  font-weight: 400;
+}
+
+@media (max-width: 850px) {
+  .salads .container .box-around .box-right .box-bg p {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 442px) {
+  .salads .container .box-around .box-right .box-bg p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .salads .container .box-around .box-right .box-bg .tag {
+    margin-top: 40px;
+  }
 }
