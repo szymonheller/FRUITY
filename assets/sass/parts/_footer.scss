@@ -1,0 +1,158 @@
+.footer {
+
+    .footer-box {
+        display: flex;
+        justify-content: center;
+
+
+        .footer-box-inside {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 15px;
+
+            .about-company {
+                width: 300px;
+                margin-right: 20px;
+
+                h2 {
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                    font-size: 30px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .about-contact {
+                margin-right: 20px;
+
+                .contact-inside {
+                    display: flex;
+                    flex-direction: column;
+
+                    h2 {
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                        font-size: 30px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        margin-bottom: 10px;
+
+                        span {
+                            font-weight: 300;
+                            color: $footerFontColor;
+                            letter-spacing: 1px;
+                            font-weight: 300;
+                            font-size: 16px;
+
+                            &:hover {
+                                color: $footerLinkHoverColor;
+                            }
+
+                            i {
+                                color: $footerIconColor;
+                            }
+
+                            .fa-map-marker-alt {
+                                margin-right: 10px;
+                            }
+
+                            .fa-phone-alt {
+                                margin-right: 7px;
+                            }
+
+                            .fa-envelope {
+                                margin-right: 7px;
+                            }
+                        }
+                    }
+
+                    .links {
+                        margin-top: 10px;
+
+                        a {
+
+                            i {
+                                font-size: 42px;
+                                margin-right: 12px;
+                            }
+
+                            .fa-facebook-square {
+                                color: #4267B2;
+                            }
+
+                            .fa-twitter-square {
+                                color: #1da1f2;
+                            }
+
+                            .fa-instagram {
+                                color: #e1306c;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-newsletter {
+
+
+                h2 {
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                    font-size: 30px;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        font-weight: 300;
+                        color: $footerFontColor;
+                        letter-spacing: 1px;
+                        font-weight: 300;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: $footerLinkHoverColor;
+                        }
+
+                        i {
+                            color: $footerIconColor;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+    .author {
+        margin-top: 5px;
+        text-align: center;
+
+        span {
+            color: #000000;
+            font-size: 16px;
+
+            i {
+                font-size: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #dd4141;
+            }
+        }
+    }
+}

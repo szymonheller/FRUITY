@@ -250,6 +250,7 @@ summary {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1104,7 +1105,7 @@ body .hvr-grow:active {
 }
 
 .salads .container .box-around .box-left .box-bg {
-  background-color: lightblue;
+  background-color: #69c4ee;
   text-align: center;
   padding: 20px 0 90px 0;
   margin: 0 -15px;
@@ -1183,4 +1184,160 @@ body .hvr-grow:active {
   .salads .container .box-around .box-right .box-bg .tag {
     margin-top: 40px;
   }
+}
+
+.footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-box .footer-box-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.footer .footer-box .footer-box-inside .about-company {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.footer .footer-box .footer-box-inside .about-company h2 {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.footer .footer-box .footer-box-inside .about-company p {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact {
+  margin-right: 20px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside h2 {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a span {
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a span:hover {
+  color: #e43258;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a span i {
+  color: #000000;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a span .fa-map-marker-alt {
+  margin-right: 10px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a span .fa-phone-alt {
+  margin-right: 7px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside a span .fa-envelope {
+  margin-right: 7px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside .links {
+  margin-top: 10px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside .links a i {
+  font-size: 42px;
+  margin-right: 12px;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside .links a .fa-facebook-square {
+  color: #4267B2;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside .links a .fa-twitter-square {
+  color: #1da1f2;
+}
+
+.footer .footer-box .footer-box-inside .about-contact .contact-inside .links a .fa-instagram {
+  color: #e1306c;
+  margin: 0;
+}
+
+.footer .footer-box .footer-box-inside .about-newsletter h2 {
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.footer .footer-box .footer-box-inside .about-newsletter a {
+  text-decoration: none;
+}
+
+.footer .footer-box .footer-box-inside .about-newsletter a span {
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer .footer-box .footer-box-inside .about-newsletter a span:hover {
+  color: #e43258;
+}
+
+.footer .footer-box .footer-box-inside .about-newsletter a span i {
+  color: #000000;
+  margin-right: 7px;
+}
+
+.footer .author {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.footer .author span {
+  color: #000000;
+  font-size: 16px;
+}
+
+.footer .author span i {
+  font-size: 20px;
+}
+
+.footer .author span a {
+  text-decoration: none;
+  color: #dd4141;
 }
