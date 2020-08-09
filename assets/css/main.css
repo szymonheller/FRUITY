@@ -276,6 +276,7 @@ body {
   /* ------------------------------- Buzz Out -------------------------------- */
   /* ------------------------------- Bounce In -------------------------------- */
   /* ------------------------------- Tobble To Bottom Right -------------------------------- */
+  /* Grow */
 }
 
 @-webkit-keyframes hvr-buzz-out {
@@ -480,6 +481,29 @@ body .hvr-wobble-to-bottom-right:active {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+body .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+body .hvr-grow:hover,
+body .hvr-grow:focus,
+body .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .menu {
@@ -745,7 +769,7 @@ body .hvr-wobble-to-bottom-right:active {
 
 .about-fruits {
   height: 320px;
-  margin-top: 170px;
+  margin-top: 190px;
   margin-bottom: 100px;
 }
 
@@ -870,7 +894,7 @@ body .hvr-wobble-to-bottom-right:active {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffffff;
-  margin: 0 88px 60px 88px;
+  margin: 0 88px 80px 88px;
 }
 
 @media (max-width: 560px) {
@@ -898,6 +922,7 @@ body .hvr-wobble-to-bottom-right:active {
           justify-content: space-between;
   border-radius: 15px;
   padding: 25px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 1111px) {
@@ -989,4 +1014,70 @@ body .hvr-wobble-to-bottom-right:active {
   height: 6px;
   background-color: #e60303;
   display: block;
+}
+
+.vegetables .container .big-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vegetables .container .big-box .small-box {
+  width: calc(100%/3);
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1100px) {
+  .vegetables .container .big-box .small-box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 740px) {
+  .vegetables .container .big-box .small-box {
+    width: 100%;
+  }
+}
+
+.vegetables .container .big-box .small-box .box-bg {
+  padding: 20px 50px;
+  text-align: center;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.vegetables .container .big-box .small-box .box-bg h2 {
+  color: #ffffff;
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.vegetables .container .big-box .small-box .box-bg p {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .8px;
+}
+
+.vegetables .container .big-box .small-box .first {
+  background-color: #ec850e;
+}
+
+.vegetables .container .big-box .small-box .second {
+  background-color: #5a3a1b;
+}
+
+.vegetables .container .big-box .small-box .third {
+  background-color: #7e6555;
 }

@@ -10,7 +10,7 @@
             flex-direction: row;
             justify-content: center;
             background-color: $informationBackgroundColor;
-            margin: 0 88px 60px 88px;
+            margin: 0 88px 80px 88px;
 
             @media (max-width:560px) {
                 background-color: $sectionVegetablesBackgroundColor;
@@ -31,6 +31,8 @@
             justify-content: space-between;
             border-radius: 15px;
             padding: 25px;
+            margin-bottom: 80px;
+
 
             @media (max-width:1111px) {
                 justify-content: center;
@@ -110,5 +112,61 @@
             }
         }
 
+        .big-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            justify-content: center;
+
+            .small-box {
+                width: calc(100%/3);
+                padding: 0 30px;
+                margin-bottom: 60px;
+
+                @media (max-width:1100px) {
+                    width: 50%;
+                }
+
+                @media (max-width:740px) {
+                    width: 100%;
+                }
+
+                .box-bg {
+                    padding: 20px 50px;
+                    text-align: center;
+                    border-top-left-radius: 80px;
+                    border-bottom-right-radius: 80px;
+
+                    h2 {
+                        color: $smallBoxFontColor;
+                        margin: 0;
+                        padding: 0 0 10px 0;
+                        font-size: 60px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        color: $smallBoxFontColor;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 18px;
+                        font-weight: 300;
+                        letter-spacing: .8px;
+                    }
+                }
+
+                .first {
+                    background-color: $smallBox1BackgroundColor;
+                }
+
+                .second {
+                    background-color: $smallBox2BackgroundColor;
+                }
+
+                .third {
+                    background-color: $smallBox3BackgroundColor;
+                }
+            }
+        }
     }
 }
