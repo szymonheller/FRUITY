@@ -29,6 +29,10 @@
             @include fluid-type-static(70px, $h1FontSize) @media (max-width:970px) {
                 top: 30%;
             }
+
+            @media (max-width:970px) {
+      top: 45%;
+  }
         }
     }
 
