@@ -605,14 +605,10 @@ body .hvr-grow:active {
   }
 }
 
-.driver .h1-background h1 {
+.driver h1 {
   margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  padding: 140px 0 0 0;
+  text-align: center;
   font-size: 102px;
   color: #ffffff;
   text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
@@ -620,31 +616,25 @@ body .hvr-grow:active {
   font-weight: 700;
 }
 
-.driver .h1-background h1 {
+.driver h1 {
   font-size: 70px;
 }
 
 @media screen and (min-width: 320px) {
-  .driver .h1-background h1 {
+  .driver h1 {
     font-size: calc(70px + 32 * ((100vw - 320px) / 820));
   }
 }
 
 @media screen and (min-width: 1140px) {
-  .driver .h1-background h1 {
+  .driver h1 {
     font-size: 102px;
   }
 }
 
 @media (max-width: 970px) {
-  .driver .h1-background h1 {
-    top: 30%;
-  }
-}
-
-@media (max-width: 970px) {
-  .driver .h1-background h1 {
-    top: 45%;
+  .driver h1 {
+    padding-top: 120px;
   }
 }
 
@@ -879,8 +869,8 @@ body .hvr-grow:active {
   padding-right: 18px;
 }
 
-.about-fruits .container .box .title h2 #last {
-  padding: 0;
+.about-fruits .container .box .title h2 .last {
+  padding: 0 !important;
 }
 
 .about-fruits .container .box p {
@@ -1226,6 +1216,25 @@ body .hvr-grow:active {
   padding: 0 15px;
 }
 
+@media (max-width: 878px) {
+  .footer .footer-box .footer-box-inside .about {
+    max-width: 600px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 718px) {
+  .footer .footer-box .footer-box-inside .about {
+    padding-left: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .footer-box .footer-box-inside .about {
+    padding-left: 20%;
+  }
+}
+
 .footer .footer-box .footer-box-inside .about-company {
   width: 300px;
   margin-right: 20px;
@@ -1241,6 +1250,24 @@ body .hvr-grow:active {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 878px) {
+  .footer .footer-box .footer-box-inside .about-company p {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer .footer-box .footer-box-inside .about-company p {
+    width: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer .footer-box .footer-box-inside .about-company p {
+    width: 200px;
+  }
 }
 
 .footer .footer-box .footer-box-inside .about-contact {
@@ -1346,7 +1373,7 @@ body .hvr-grow:active {
 }
 
 .footer .author {
-  margin-top: 5px;
+  margin-top: 60px;
   text-align: center;
 }
 

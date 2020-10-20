@@ -10,31 +10,26 @@
         height: 260px;
     }
 
-    .h1-background {
 
-        h1 {
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: $h1FontSize;
-            color: $h1FontColor;
-            text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000,
-                -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-            text-transform: uppercase;
-            font-weight: 700;
 
-            @include fluid-type-static(70px, $h1FontSize) @media (max-width:970px) {
-                top: 30%;
-            }
+    h1 {
+        margin: 0;
+        padding: 140px 0 0 0;
+        text-align: center;
+        font-size: $h1FontSize;
+        color: $h1FontColor;
+        text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000,
+            -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+        text-transform: uppercase;
+        font-weight: 700;
 
-            @media (max-width:970px) {
-      top: 45%;
-  }
+        @include fluid-type-static(70px, $h1FontSize) @media (max-width:970px) {
+            padding-top: 120px
         }
+
+
     }
+
 
 
 }
